@@ -23,6 +23,7 @@ class M_stock extends Ci_model {
 						'item.item_quantity', 
 						'admin.admin_name', 
 						'item.item_id'
+					);
 			/*
 			* $this 				The instance of this very model (M_stock)
 			* 'dt_get_all_items'	The name of this very function, because 
@@ -53,7 +54,7 @@ class M_stock extends Ci_model {
 		// BUT this function wouldn't respond to DataTable post query
 		// This would just return the traditional result
 		// This function is here for helping you to understand which code is where to put
-		
+
 		$select = "item_id, item_name, item_category_name, item_sale_price, item_quantity, admin.admin_name, item_id as it_id";
 		$this->db->where('item.is_deleted', $is_deleted);
 		$this->db->join('item_category', 'item.item_category_id = item_category.item_category_id');
