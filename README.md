@@ -3,6 +3,8 @@ This is a codeigniter library for building query string and returning result in 
 
 Well, to be honest, we can't call it a library because we can't put it in codeigniter library and load it. Instead, we have to copy the custom functions in the `Model.php` file to the Core CI Model.
 
+![alt text](stock_screenshot.png?raw=true "Stock Screenshot")
+
 You can find the Core CI Model file in the following directory:
 `system/core/Model.php`
 I won't recommend copying and overwriting the file with the `Model.php` from this repo. Instead you should only copy the custom functions and paste them.
