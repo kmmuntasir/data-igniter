@@ -12,7 +12,7 @@ class M_stock extends Ci_model {
 			* Build the columns array, you can't just explode the SELECT string using whitespace
 			* and use the result array because this is the list of columns which datatables is
 			* going to search from. Besides, the SELECT string might have other items 
-			* separated by space (look at * the last item in the SELECT string)
+			* separated by space (look at the last item in the SELECT string)
 			*/
 			$select = "item_id, item_name, item_category_name, item_sale_price, item_quantity, admin.admin_name, item_id as it_id";
 			$columns = array(
